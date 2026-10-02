@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schema.tauri.app/config/2.0.0.json",
+  "productName": "Notary662Tehran",
+  "version": "1.0.0",
+  "identifier": "ir.notary662th.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:3000",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "دفتر اسناد رسمی ۶۶۲ تهران | خانم لیلا فرج زاده",
+        "width": 1280,
+        "height": 850,
+        "resizable": true,
+        "fullscreen": false,
+        "transparent": false,
+        "decorations": true,
+        "theme": "Dark"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "publisher": "دفتر اسناد رسمی ۶۶۲ تهران - خانم لیلا فرج زاده",
+    "copyright": "Copyright © 2026 Notary Office 662 Tehran. All rights reserved.",
+    "category": "Office",
+    "shortDescription": "سامانه محاسبه آنلاین تعرفه اسناد رسمی و سهم‌الارث قانونی متوفی",
+    "longDescription": "سامانه محاسبه آنلاین تعرفه اسناد رسمی، بیع قطعی، اسناد رهنی، اجاره و سهم‌الارث قانونی متوفی مطابق بخشنامه ابلاغی سازمان ثبت اسناد و املاک کشور.",
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "displayLanguageSelector": false,
+        "languages": ["Persian", "English"]
+      },
+      "wix": {
+        "language": "en-US"
+      }
+    }
+  }
+}
